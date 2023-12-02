@@ -46,7 +46,7 @@ fn part2(data: &str) -> usize {
 
 fn main() {
     println!("Day 1");
-    let data = std::fs::read_to_string("input/day1.txt").unwrap();
+    let data = std::fs::read_to_string("input/day01.txt").unwrap();
     println!("Part 1: {}", part1(&data));
     println!("Part 2: {}", part2(&data));
 }
@@ -70,8 +70,12 @@ zoneight234
 7pqrstsixteen"#;
 
     #[test]
-    fn example() {
+    fn day01_part1() {
         assert_eq!(part1(PART1), 142);
+    }
+
+    #[test]
+    fn day01_part2() {
         assert_eq!(part2(PART2), 281);
     }
 }
