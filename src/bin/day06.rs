@@ -61,7 +61,7 @@ fn part2(data: &str) -> usize {
 }
 
 fn main() {
-    println!("Day 2");
+    println!("Day 6");
     let data = std::fs::read_to_string("input/day06.txt").unwrap();
     println!("Part 1: {}", part1(&data));
     println!("Part 2: {}", part2(&data));
